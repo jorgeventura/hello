@@ -1,0 +1,3 @@
+[submodule "rem-repo"]
+	path = rem-repo
+	url = git@ssh.dev.azure.com:v3/PPTR-D/Parkview-i/rem-repo
