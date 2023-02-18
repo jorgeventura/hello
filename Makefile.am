@@ -6,6 +6,9 @@ hello_SOURCES=hello.cc
 git-push:
 	@git push --recurse-submodules=on-demand
 
-manifest:
-	$(top_srcdir)/gentoo/rem-repo.sh manifest $(PACKAGE)-$(VERSION).ebuild
+create-ebuild:
+	cp ./gentoo/hello.ebuild.in rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild
+
+update-manifest:
+	ebuild ./rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild manifest
 
