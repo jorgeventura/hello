@@ -764,8 +764,8 @@ uninstall-am: uninstall-binPROGRAMS
 git-push:
 	@git push --recurse-submodules=on-demand
 
-ebuild:
-	@cp $(top_srcdir)/gentoo/hello.ebuild.in $(top_srcdir)/rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild
+manifest:
+	$(top_srcdir)/gentoo/rem-repo.sh manifest $(PACKAGE)-$(VERSION).ebuild
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
