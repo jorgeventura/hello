@@ -1,0 +1,18 @@
+ 1. Make changes
+ 2. compile using make program
+ 
+ 3. $ make distcheck
+ 4. $ scp <project>.tar.gz root@10.11.10.90:/var/www/localhost/htdocs/rem-repo/app-rem/<project>/
+ 5. $ make create-ebuild
+ 6. $ sudo make update-manifest
+ 
+ 7. $ cd rem-repo
+    7.1 $ git status
+    7.2 $ git add <new untracked>.ebuild
+    7.3 $ git commit -am'version n.n.n'
+    7.4 $ cd ..
+
+ 8. $ git commit -am'<custom message>'
+ 9. $ make git-push
+
+
