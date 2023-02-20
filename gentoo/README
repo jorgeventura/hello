@@ -1,3 +1,23 @@
+Repository setup
+================
+Using the package app-eselect/eselect-repository.
+
+ 1. # eselect repository add rem-repo git git@ssh.dev.azure.com:v3/PPTR-D/Parkview-i/rem-repo
+
+After clone project
+===================
+
+ 1. cd <project dir>
+ 2. $ git submodule init
+
+To fetch the content:
+
+ 3. $ git submodule update
+
+
+Regular work with project
+=========================
+
  1. Make changes
  2. compile using make program
  
