@@ -6,6 +6,6 @@ hello world program
 #include "config.h"
 
 int main() {
-    std::cout << "Sign >>> Hello World <<<, " << "Version: " << VERSION << std::endl;
+    std::cout << ">>> Hello World <<<, " << "Version: " << VERSION << std::endl;
 }
 
