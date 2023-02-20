@@ -30,9 +30,10 @@ Regular work with project
     7.1 $ git status
     7.2 $ git add <new untracked>.ebuild
     7.3 $ git commit -am'version n.n.n'
-    7.4 $ cd ..
+    7.4 $ git push
+    7.5 $ cd ..
 
  8. $ git commit -am'<custom message>'
- 9. $ make git-push
+ 9. $ git push
 
 
