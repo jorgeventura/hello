@@ -10,7 +10,8 @@ create-ebuild:
 	cp ./gentoo/hello.ebuild.in rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild
 
 update-manifest:
-	@rm /usr/portage/distfiles/$(PACKAGE)-$(VERSION).tar.gz
-	@rm ./rem-repo/app-rem/hello/Manifest
+	@-rm /usr/portage/distfiles/$(PACKAGE)-$(VERSION).tar.gz
+	@-rm ./rem-repo/app-rem/hello/Manifest
+	@-cp $(PACKAGE)-$(VERSION).tar.gz /usr/portage/distfiles/
 	ebuild ./rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild manifest
 
