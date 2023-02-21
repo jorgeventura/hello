@@ -13,5 +13,7 @@ update-manifest:
 	-rm /usr/portage/distfiles/$(PACKAGE)-$(VERSION).tar.gz
 	-rm ./rem-repo/app-rem/hello/Manifest
 	-cp $(PACKAGE)-$(VERSION).tar.gz /usr/portage/distfiles/
-	ebuild ./rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild manifest
+	-chown portage:portage /usr/portage/distfiles/$(PACKAGE)-$(VERSION).tar.gz
+	-chmod 0664 /usr/portage/distfiles/$(PACKAGE)-$(VERSION).tar.gz
+	ebuild --force ./rem-repo/app-rem/hello/$(PACKAGE)-$(VERSION).ebuild manifest
 

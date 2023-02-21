@@ -35,3 +35,6 @@ Regular work with project
  7. $ git commit -am'<custom message>'
  8. $ git push
 
+ 9. $ sudo emerge --sync rem-repo
+
+
