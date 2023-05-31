@@ -6,6 +6,10 @@ hello world program
 #include "config.h"
 
 int main() {
-    std::cout << "Hello World, " << "Version: " << VERSION << std::endl;
+    std::string msg;
+
+    msg = "Hello World, Version: " + std::string(VERSION) + "\n";
+
+    std::cout << msg;
 }
 
