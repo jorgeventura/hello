@@ -8,7 +8,7 @@ hello world program
 int main() {
     std::string msg;
 
-    msg = "====>>> Hello Fucking DevOps, Version: " + std::string(VERSION) + "\n";
+    msg = "Hello Nice DevOps, Version: " + std::string(VERSION) + "\n";
 
     std::cout << msg;
 }
